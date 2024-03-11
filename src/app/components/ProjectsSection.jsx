@@ -15,7 +15,7 @@ const projectsData = [
     image: "/images/portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://ajformen.vercel.app/",
+    previewUrl: "https://aj-formen.vercel.app/",
   },
   {
     id: 2,
