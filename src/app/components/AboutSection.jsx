@@ -9,16 +9,34 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Next.js</li>
-        <li>Prisma</li>
-        <li>MySQL</li>
-        <li>C# .NET</li>
-        <li>JavaScript</li>
-        <li>MongoDB</li>
-        <li>Dart/Flutter</li>
-        <li>HTML/CSS</li>
-        <li>Git</li>
-        <li>Wordpress SEO</li>
+        <li>Frontend Development
+          <br />
+          - <span className="text-gray-500">Next.js, Angular, JavaScript, TypeScript, HTML/CSS, jQuery, Dart/Flutter</span>
+        </li>
+        <li>Backend Development
+          <br />
+          - <span className="text-gray-500">NestJS, ASP.Net, C#.NET, Node.js, Prisma, Python</span>
+        </li>
+        <li>Databases
+          <br />
+          - <span className="text-gray-500">MySQL, SQL Server Management Studio, MongoDB</span>
+        </li>
+        <li>DevOps & Containerization
+          <br />
+          - <span className="text-gray-500">Docker Desktop, WSL2 (Windows Subsytem for Linux 2)</span>
+        </li>
+        <li>Version Control
+          <br />
+          - <span className="text-gray-500">Git</span>
+        </li>
+        <li>API Integration
+          <br />
+          - <span className="text-gray-500">Slack Webhook API</span>
+        </li>
+        <li>Other Technologies
+          <br />
+          - <span className="text-gray-500">Search Engine Optimization (SEO)</span>
+        </li>
       </ul>
     ),
   },
@@ -27,9 +45,13 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
+        <li>Fishbulb Solutions Pty Ltd
+          <br />
+          - <span className="text-gray-500">May 2024 - Feb 2025</span>
+        </li>
         <li>Software Developer at MLhuillier Financial Services
           <br />
-          - <span className="text-gray-500">Mar 2023 - Present</span>
+          - <span className="text-gray-500">Mar 2023 - May 2024</span>
         </li>
         <li>Flutter Developer at Etousoft IT Solutions
           <br />
@@ -81,13 +103,13 @@ const AboutSection = () => {
         <Image src="/images/about-image.png" width={500} height={500} alt="about image" priority />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive web applications. I have experience
-            working with JavaScript, Next.js, Node.js, MongoDB, MySQL,
-            HTML, CSS, C# .NET and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          <p className="text-base lg:text-lg text-justify">
+            I am a skilled full-stack web developer with a strong passion for building dynamic and interactive web
+            applications. With hands-on experience in technologies such as Angular, JavaScript, Next.js, NestJS,
+            Node.js, MongoDB, MySQL, HTML, CSS, C# .NET, and Git, I thrive in creating efficient and scalable
+            solutions. I am a fast learner, always eager to expand my technical expertise and stay updated with
+            the latest trends. As a collaborative team player, I am excited to contribute to innovative projects and
+            work alongside others to deliver exceptional applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

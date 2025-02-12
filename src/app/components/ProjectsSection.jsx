@@ -62,6 +62,24 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://jeebeenbee.vercel.app/",
   },
+  {
+    id: 7,
+    title: "COCO Orange",
+    description: "An insurance software system",
+    image: "/images/coco-orange.png",
+    tag: ["All", "Desktop", "Work"],
+    gitUrl: "/",
+    previewUrl: "",
+  },
+  {
+    id: 8,
+    title: "FishTix",
+    description: "A ticketing system application",
+    image: "/images/fishtix.png",
+    tag: ["All", "Web", "Work"],
+    gitUrl: "/",
+    previewUrl: "https://fishtix.fishbulb.dev/account/login",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -105,12 +123,19 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
+          name="Desktop"
+          isSelected={tag === "Desktop"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
           name="Work"
           isSelected={tag === "Work"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
+        {filteredProjects
+          .sort((a, b) => b.id - a.id)
+          .map((project, index) => (
           <motion.li
             key={index}
             variants={cardVariants}
