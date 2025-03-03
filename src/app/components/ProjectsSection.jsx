@@ -87,7 +87,7 @@ const projectsData = [
     image: "/images/fb-ads-portfolio.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "https://jeecreative-fbads.vercel.app/",
+    previewUrl: "https://jeecreative-fbads.vercel.app/ajformen",
   },
 ];
 
