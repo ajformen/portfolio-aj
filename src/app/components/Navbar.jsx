@@ -18,6 +18,10 @@ const navLinks = [
     title: "Connect",
     path: "#contact",
   },
+  {
+    title: "Resume",
+    path: "/file/Resume_Adeliso_Formentera_Jr.pdf",
+  }
 ];
 
 const Navbar = () => {
@@ -30,7 +34,14 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          AJ
+          <div className="flex items-center gap-2">
+            <div className="border border-white text-white font-BOLD rounded-md w-auto pt-1 pb-1 pl-3 pr-3">A</div>
+            <div className="flex font-bold text-xs md:text-sm border-b-2 border-white pt-1 md:pt-2 pb-1">
+              <div>ADELISO</div>
+              <div>&nbsp;</div>
+              <div>FORMENTERA JR</div>
+            </div>
+          </div>
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
@@ -56,6 +67,14 @@ const Navbar = () => {
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
+            {/* <li
+              href="/file/Resume_Adeliso_Formentera_Jr.pdf"
+              className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </li> */}
           </ul>
         </div>
       </div>

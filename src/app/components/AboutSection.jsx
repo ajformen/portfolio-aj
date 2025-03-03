@@ -99,11 +99,11 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-1 lg:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} alt="about image" priority />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-justify">
+          <p className="text-sm md:text-base lg:text-lg text-justify">
             I am a skilled full-stack web developer with a strong passion for building dynamic and interactive web
             applications. With hands-on experience in technologies such as Angular, JavaScript, Next.js, NestJS,
             Node.js, MongoDB, MySQL, HTML, CSS, C# .NET, and Git, I thrive in creating efficient and scalable
@@ -111,7 +111,7 @@ const AboutSection = () => {
             the latest trends. As a collaborative team player, I am excited to contribute to innovative projects and
             work alongside others to deliver exceptional applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 text-sm md:text-base">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -141,7 +141,7 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-sm md:text-base">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

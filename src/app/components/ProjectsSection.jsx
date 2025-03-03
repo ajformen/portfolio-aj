@@ -80,6 +80,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://fishtix.fishbulb.dev/account/login",
   },
+  {
+    id: 9,
+    title: "Facebook Ads Portfolio",
+    description: "A Dynamic Portfolio for the Facebook Ads Specialist",
+    image: "/images/fb-ads-portfolio.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://jeecreative-fbads.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -132,7 +141,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Work"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 pl-5 pr-5 md:pl-14 md:pr-14 lg:pl-0 lg:pr-0">
         {filteredProjects
           .sort((a, b) => b.id - a.id)
           .map((project, index) => (
